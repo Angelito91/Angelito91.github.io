@@ -1,26 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Portafolio</title>
-	<link rel="stylesheet" type="text/css" href="static/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="static/estilos.css">
+	<link rel="stylesheet" type="text/css" href="static/css/bulma.css">
+	<link rel="stylesheet" type="text/css" href="static/css/bulma-margin.css">
 </head>
+
 <body>
-	<header class="container-fluid my-2 border-4 border-bottom border-info ">
-		<div class="d-flex flex-wrap justify-content-end bg-light rounded rounded-pill">
-			<a class="d-flex align-items-center mb-3 mb-md-0 me-md-auto mx-2 px-2 logotipo" href="./index.html">
-				<span><img class="logo-img" src="static/person-badge.svg"></span>
-			</a>
-			<ul class="nav nav-fill">
-				<li class="nav-item"><a class="nav-link text-muted" href="./index.html">Inicio</a></li>
-				<li class="nav-item"><a class="nav-link text-muted" href="./acerca.html">Acerca</a></li>
-				<li class="nav-item"><a class="nav-link text-muted" href="./contacto.html">Contacto</a></li>
-			</ul>
+	<header class="box has-background-light">
+		<div class="level">
+			<div class="level-item level-left">
+				<a href="/">
+					<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+						class="bi bi-person-badge" viewBox="0 0 16 16">
+						<path d="M6.5 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1h-3zM11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+						<path
+							d="M4.5 0A2.5 2.5 0 0 0 2 2.5V14a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2.5A2.5 2.5 0 0 0 11.5 0h-7zM3 2.5A1.5 1.5 0 0 1 4.5 1h7A1.5 1.5 0 0 1 13 2.5v10.795a4.2 4.2 0 0 0-.776-.492C11.392 12.387 10.063 12 8 12s-3.392.387-4.224.803a4.2 4.2 0 0 0-.776.492V2.5z" />
+					</svg>
+					<span class="has-text-weight-bold">
+						Portafolio
+					</span>
+				</a>
+			</div>
+			<div class="level-item level-right">
+				<a class="button is-info has-margin-right-10" href="./contacto.html">Contacto</a>
+				<a class="button is-info" href="./acerca.html">Acerca</a>
+			</div>
 		</div>
 	</header>
-	<p class="text-center text-danger m-5">Este es mi primer projecto es solo una basica web(<a class="text-muted" href="https://github.com/Angelito91/Angelito91.github.io.git">github</a>), donde expongo algunas de las cosas del mundo de la programcion conozco e realizado<br>No se fijen en el diseño soy principiante :)</p>
-	<script type="static/bootstrap.js"></script>
+
+	<div class="box">
+		<p class="has-text-centered has-text-danger has-text-weight-bold">
+			Este es un projecto que realice para probar GitHub Pages, y ademas de poder poner mis habilidades 
+			aprueba y que tengan una alcance global
+		</p>
+		<a class="button is-rounded is-outlined is-info has-margin-10" href="https://github.com/Angelito91/Angelito91.github.io"><-- GitHub</a>
+	</div>
+
+
 </body>
 </html>

@@ -1,45 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Portafolio</title>
-	<link rel="stylesheet" type="text/css" href="static/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="static/estilos.css">
+	<link rel="stylesheet" type="text/css" href="static/css/bulma.css">
+	<link rel="stylesheet" type="text/css" href="static/css/bulma-margin.css">
+	<link rel="stylesheet" type="text/css" href="static/css/bulma-carousel.min.css">
 </head>
+
 <body>
-	<header class="container-fluid my-2 border-4 border-bottom border-info ">
-		<div class="d-flex flex-wrap justify-content-end bg-light rounded rounded-pill">
-			<a class="d-flex align-items-center mb-3 mb-md-0 me-md-auto mx-2 px-2 logotipo" href="./index.html">
-				<span><img class="logo-img" src="static/person-badge.svg"></span>
-			</a>
-			<ul class="nav nav-fill">
-				<li class="nav-item"><a class="nav-link text-muted" href="./index.html">Inicio</a></li>
-				<li class="nav-item"><a class="nav-link text-muted" href="./acerca.html">Acerca</a></li>
-				<li class="nav-item"><a class="nav-link text-muted" href="./contacto.html">Contacto</a></li>
-			</ul>
+	<style>
+		.carosuel-1 {
+			overflow: hidden;
+		}
+		.p{
+			width: 30%;
+		}
+		.f{
+			height:288px;
+		}
+		.f-2{
+			height:238px;
+		}
+	</style>
+	<header class="box has-background-light">
+		<div class="level">
+			<div class="level-item level-left">
+				<a href="/">
+					<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+						class="bi bi-person-badge" viewBox="0 0 16 16">
+						<path d="M6.5 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1h-3zM11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+						<path
+							d="M4.5 0A2.5 2.5 0 0 0 2 2.5V14a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2.5A2.5 2.5 0 0 0 11.5 0h-7zM3 2.5A1.5 1.5 0 0 1 4.5 1h7A1.5 1.5 0 0 1 13 2.5v10.795a4.2 4.2 0 0 0-.776-.492C11.392 12.387 10.063 12 8 12s-3.392.387-4.224.803a4.2 4.2 0 0 0-.776.492V2.5z" />
+					</svg>
+					<span class="has-text-weight-bold">
+						Portafolio
+					</span>
+				</a>
+			</div>
+			<div class="level-item level-right">
+				<a class="button is-info has-margin-right-10" href="./contacto.html">Contacto</a>
+				<a class="button is-info" href="./acerca.html">Acerca</a>
+			</div>
 		</div>
 	</header>
-	<div class="d-flex justify-content-center">
-		<div class="card card-body">
-	        <img src="static/images1.jpg">
-	        <p class="card-text">Soy un aficionado de la programacion,con un gran deseo de seguir aprendiendo de este tema,de crear o estar en grandes proyectos </p>
-	   </div>
-	    <div class="card card-body">
-	        <img src="static/images.png">
-	        <p class="card-text">Mi lenjuague de programacion favorito es python, desde que lo use me enamoro</p>
-	    </div>
-	      <div class="card card-body">
-	        <p class="card-text">Las tecnologias que se utilizar:<br>1-python; django<br>2-c/c++<br>3-html<br>4-css<br>5-javascript</p>
-	    </div>
+
+	<p class="title has-text-centered has-text-info">Hola me llamo angel</p>
+	<p class="subtitle has-text-centered has-text-danger">Soy un joven apasionado de la tecnologia </p>
+
+	<div class="container">
+		<article class="box">
+			<div id="carosuel-1" class="carousel">
+				<div class="item-1 is-active">
+					<div class="level">
+						<div class="level-item level-left">
+							<img src="static/img/images.png" alt="Portada">
+							<p class="p has-text-centered has-text-weight-bold has-margin-left-30">
+								Mi lenguaje de programacion favorito es python, desde que un amigo de mi papa hablo de
+								el me entro curiosidad y me enamore de sus caracteristicas
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="item-2">
+					<div class="level">
+						<div class="level-item level-left">
+							<img src="static/img/images1.jpg" alt="Portada">
+							<p class="p has-text-centered has-text-weight-bold has-margin-left-30">
+								Utimamente me ha imprecionado la web, es por eso que entre a este mundito
+								y adentrandome a el desarrollo web con muchas nuevas tecnologia.
+								Es por ello que eh desarrollado este portafolio 
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</article>
+		<hr>
+
+		<p class="subtitle has-text-centered">Algunos de los conocimentos que se lo basico</p>
+
+		<article class="columns">
+			<div class="message column is-3">
+				<div class="message-header">
+					PYTHON
+				</div>
+				<div class="message-body">
+					<img src="static/img/python.jpg" alt="PYTHON">
+				</div>
+			</div>
+			<div class="message column is-3">
+				<div class="message-header">
+					PYTHON-DJANGO
+				</div>
+				<div class="message-body">
+					<img src="static/img/django.png" alt="PYTHON-DJANGO">
+				</div>
+			</div>
+			<div class="message column is-3">
+				<div class="message-header">
+					C++
+				</div>
+				<div class="message-body">
+					<img src="static/img/c++.png" alt="C++">
+				</div>
+			</div>
+			<div class="message column is-3 f" >
+				<div class="message-header">
+					JAVA
+				</div>
+				<div class="message-body">
+					<img src="static/img/java.png" alt="java">
+				</div>
+			</div>
+		</article>
+
+		<article class="columns">
+			<div class="message column is-3">
+				<div class="message-header">
+					HTML
+				</div>
+				<div class="message-body">
+					<img src="static/img/html.png" alt="HTML">
+				</div>
+			</div>
+			<div class="message column is-3">
+				<div class="message-header">
+					CSS
+				</div>
+				<div class="message-body">
+					<img src="static/img/css.png" alt="CSS">
+				</div>
+			</div>
+			<div class="message column is-3">
+				<div class="message-header">
+					CSS-BULMA
+				</div>
+				<div class="message-body">
+					<img src="static/img/bulma.png" alt="CSS-BULMA">
+				</div>
+			</div>
+			<div class="message column is-3 f-2">
+				<div class="message-header">
+					JAVASCRIPT
+				</div>
+				<div class="message-body">
+					<img src="static/img/javascript.png" alt="JAVASCRIPT">
+				</div>
+			</div>
+		</article>
 	</div>
-	<div class="border border-4 m-4 border-info">
-		<h1 class="text-center text-info my-3">Aqui les dejo algunas cositas que e realizado</h1>
-		<div class="d-flex justify-content-center">
-			<a class="mx-5 my-1 btn btn-primary" href="static/Web.rar">Django</a>
-			<a class="mx-5 my-1 btn btn-primary" href="static/appBBdd.rar">Python-CRUD</a>
-		</div>
+	<hr>
+
+	<p class="subtitle has-text-centered">Mis projectos</p>
+
+	<div class="box">
+		<div class="content">
+			<a class="button is-info is-rounded has-margin-1" href="/static/files/appBBdd.rar">
+				PYTHON-BASE DE DATOS
+			</a>
+			<a class="button is-info is-rounded has-margin-left-20 has-margin-top-1" href="/static/files/Web.rar">
+				PYTHON-DJANGO-WEB
+			</a>
+			<a class="button is-info is-rounded has-margin-left-20 has-margin-top-1" href="/static/files/">
+				PYTHON-DJANGO-TIENDA
+			</a>
+			<a class="button is-info is-rounded has-margin-left-20 has-margin-top-1" href="/static/files/appBBdd.rar">
+				PYTHON-DJANGO-TWITTER
+			</a>
 	</div>
-	<script type="static/bootstrap.js"></script>
+
+	<script src="static/js/bulma-carousel.min.js"></script>
+	<script>
+		bulmaCarousel.attach('#carosuel-1', {
+			slidesToScroll: 1,
+			slidesToShow: 1,
+			navigationSwipe: true,
+			autoplay: true,
+			autoplaySpeed: 5000,
+			loop: true,
+		});
+	</script>
 </body>
+
 </html>
